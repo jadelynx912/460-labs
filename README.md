@@ -68,7 +68,7 @@ You should have Git installed from the previous section.
 1. The first thing we have to do is to clone the current lab repository by issuing the following commands on the command line:
 
    ```bash
-    $ git clone https://github.com/UA-DB-Class/go-db-lab-2024.git
+    $ git clone https://github.com/UA-DB-Class/go-db-lab-2024-fall.git
    ```
 
    Now, every time a new lab or patch is released, you can
@@ -91,8 +91,8 @@ You should have Git installed from the previous section.
 
    ```bash
     $ git remote -v
-        origin https://github.com/UA-DB-Class/go-db-lab-2024.git (fetch)
-        origin https://github.com/UA-DB-Class/go-db-lab-2024.git (push)
+        origin https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (fetch)
+        origin https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (push)
    ```
 
    We don't want that remote to be the origin. Instead, we want to change it to point to your repository. To do that, issue the following command:
@@ -105,8 +105,8 @@ You should have Git installed from the previous section.
 
    ```bash
     $ git remote -v
-        upstream https://github.com/UA-DB-Class/go-db-lab-2024.git (fetch)
-        upstream https://github.com/UA-DB-Class/go-db-lab-2024.git (push)
+        upstream https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (fetch)
+        upstream https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (push)
    ```
 
 4. Lastly we need to give your repository a new `origin` since it is lacking one. Issue the following command, substituting your athena username:
@@ -140,8 +140,8 @@ You should have Git installed from the previous section.
 
    ```bash
     $ git remote -v
-        upstream https://github.com/UA-DB-Class/go-db-lab-2024.git (fetch)
-        upstream https://github.com/UA-DB-Class/go-db-lab-2024.git (push)
+        upstream https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (fetch)
+        upstream https://github.com/UA-DB-Class/go-db-lab-2024-fall.git (push)
         origin https://github.com/[your-username]/[your-repo] (fetch)
         origin https://github.com/[your-username]/[your-repo] (push)
    ```
@@ -283,7 +283,7 @@ If at any point you need help with setting all this up, feel free to reach out t
 
 [join]: https://github.com/join
 
-[labs-github]: https://github.com/UA-DB-Class/go-db-lab-2024.git
+[labs-github]: https://github.com/UA-DB-Class/go-db-lab-2024-fall.git
 
 [omg]: https://ohmygit.org/
 
