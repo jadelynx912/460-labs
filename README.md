@@ -214,7 +214,7 @@ called `lab1-writeup.txt` with your submission.
 
 If you are working with a partner, only one person needs to submit to
 Gradescope. However, make sure to add the other person to your group. Also note
-that each member must have their own writeup. Please add your Kerberos username
+that each member must have their own writeup. Please add your NetID
 to the file name and in the writeup itself (e.g., `lab1-writeup-username1.txt`
 and `lab1-writeup-username2.txt`).
 
@@ -231,7 +231,7 @@ $ zip -r submission.zip godb/ lab1-writeup-username1.txt lab1-writeup-username2.
 ## <a name="submitting-bug">Submitting a bug</a>
 
 Please submit (friendly!) bug reports to
-[caolei@arizona.edu](mailto:caolei@arizona.edu). When you do, please try to
+[xinyuguo@arizona.edu](mailto:xinyuguo@arizona.edu). When you do, please try to
 include:
 
 * A description of the bug.
@@ -275,7 +275,7 @@ that what you want to see matches up with what you expect.
 
 ## <a name="help">Help!</a>
 
-If at any point you need help with setting all this up, feel free to reach out to [caolei@arizona.edu](mailto:caolei@arizona.edu).
+If at any point you need help with setting all this up, feel free to reach out to [xinyuguo@arizona.edu](mailto:xinyuguo@arizona.edu).
 
 [gitbook]: http://git-scm.com/book/en/Getting-Started-Installing-Git
 

@@ -1,8 +1,8 @@
 # Lab 1: GoDB
 
-**Assigned:** Wednesday September 13, 2024
+**Assigned:** Tuesday September 3, 2024
 
-**Due:** Wednesday September 27, 2024 by 11:59 PM ET
+**Due:** Wednesday September 19, 2024 by 11:59 PM MT
 
 <!--
 **Bug Update:** We have a [page](bugs.html) to keep track
@@ -11,15 +11,13 @@ posted there. Some bugs may have already been found, so do take a look at the
 page to get the latest version/ patches for the lab code.
 -->
 
-In the lab assignments in 6.5830/6.5831 you will write a basic database
+In the lab assignments in CSC460 you will write a basic database
 management system called GoDB. For this lab, you will focus on implementing
 the core modules required to access stored data on disk; in future labs, you
 will add support for various query processing operators, as well as
 transactions, locking, and concurrent queries.
 
-Unlike in previous years, this year's labs are implemented in Go.
-Since Course 6 has moved away from teaching Java in our software engineering classes, it
-makes less sense to use Java for our systems classes as well.  Go is a simple, modern language
+Unlike in previous years, this year's labs are implemented in Go. Go is a simple, modern language
 that is easy to learn and efficient.  It uses garbage collection so is far easier to program than
 e.g., C or C++.  In addition, few students in the class will have extensive experience with Go,
 so it "levels the playing field", unlike Java where some students  know it very well
@@ -27,8 +25,7 @@ and others have little experience with it.
 
 Because this is the first year we are using Go, there will certainly be bugs in the labs or things
 that are not clear.  Please be patient with us;  we will do our best to be responsive and help you
-resolve issues and ambiguity.  We have also reduced the number of required labs from 4 to 3 (adding a Go Tutorial)
-in place of one of the labs.
+resolve issues and ambiguity.
 
 For GoDB We have provided you with a set of mostly
 unimplemented methods, which you will need to fill in.
@@ -48,7 +45,7 @@ requires you to write a fair amount of code!
 ##  0.  Find bugs, be patient, earn treats
 
 GoDB is a relatively complex piece of code, and we have written it from scratch for this
-years 6.5830 class. It is very possible you are
+years class. It is very possible you are
 going to find bugs, inconsistencies, and bad or incorrect
 documentation, etc.
 
@@ -218,7 +215,6 @@ GoDB does not include many things that you may think of as being a part of a
   labs.
 * Views.
 * Data types except integers and fixed length strings.
-* (In this lab) Query optimizer.
 * (In this lab) Indices.
 
 In the rest of this Section, we describe each of the main components of GoDB
@@ -507,7 +503,7 @@ $ zip -r submission.zip godb/ lab1-writeup-username1.txt lab1-writeup-username2.
 ### 3.3. Submitting a bug
 
 Please submit (friendly!) bug reports to
-[caolei@arizona.edu](mailto:caolei@arizona.edu). When you do, please try to
+[xinyuguo@arizona.edu](mailto:xinyuguo@arizona.edu). When you do, please try to
 include:
 
 * A description of the bug.
