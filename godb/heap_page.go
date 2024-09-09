@@ -50,8 +50,6 @@ dirty page, it's OK if tuples are renumbered when they are written back to disk.
 
 type heapPage struct {
 	// TODO: some code goes here
-	beforeImage *heapPage
-	dirtier     TransactionID
 	sync.Mutex
 }
 
@@ -60,6 +58,8 @@ func newHeapPage(desc *TupleDesc, pageNo int, f *HeapFile) (*heapPage, error) {
 	// TODO: some code goes here
 	return &heapPage{}, fmt.Errorf("newHeapPage is not implemented") //replace me
 }
+
+// Hint: heapfile/insertTuple needs function there:  func (h *heapPage) getNumEmptySlots() int
 
 func (h *heapPage) getNumSlots() int {
 	// TODO: some code goes here
@@ -83,17 +83,12 @@ func (h *heapPage) deleteTuple(rid recordID) error {
 // Page method - return whether or not the page is dirty
 func (h *heapPage) isDirty() bool {
 	// TODO: some code goes here
-	// TODO: some code goes here
 	return false //replace me
 }
 
 // Page method - mark the page as dirty
 func (h *heapPage) setDirty(tid TransactionID, dirty bool) {
 	// TODO: some code goes here
-	// TODO: some code goes here
-	if dirty {
-		h.dirtier = tid
-	}
 }
 
 // Page method - return the corresponding HeapFile
@@ -124,7 +119,7 @@ func (h *heapPage) initFromBuffer(buf *bytes.Buffer) error {
 // return it. Return nil, nil when the last tuple is reached.
 func (p *heapPage) tupleIter() func() (*Tuple, error) {
 	// TODO: some code goes here
-	return func() (*Tuple, error) {
-	return nil, fmt.Errorf("heap_file.Iterator not implemented") // replace me
+	return func() (*Tuple, error) { // replace me
+		return nil, fmt.Errorf("heap_file.Iterator not implemented")
 	}
 }

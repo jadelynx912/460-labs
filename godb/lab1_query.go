@@ -24,5 +24,6 @@ Note that you should NOT pass fileName into NewHeapFile -- fileName is a CSV
 file that you should call LoadFromCSV on.
 */
 func computeFieldSum(bp *BufferPool, fileName string, td TupleDesc, sumField string) (int, error) {
+	// TODO: some code goes here
 	return 0, fmt.Errorf("computeFieldSum not implemented") // replace me
 }

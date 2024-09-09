@@ -7,7 +7,6 @@ package godb
 
 import (
 	"fmt"
-	"log"
 )
 
 // Permissions used to when reading / locking pages
@@ -25,7 +24,8 @@ type BufferPool struct {
 
 // Create a new BufferPool with the specified number of pages
 func NewBufferPool(numPages int) (*BufferPool, error) {
-	return &BufferPool{}, fmt.Errorf("NewBufferPool not implemented")
+	// TODO: some code goes here
+	return &BufferPool{}, fmt.Errorf("NewBufferPool not implemented") // replace me
 }
 
 // Testing method -- iterate through all pages in the buffer pool
@@ -39,7 +39,6 @@ func (bp *BufferPool) FlushAllPages() {
 // of the pages tid has dirtied will be on disk so it is sufficient to just
 // release locks to abort. You do not need to implement this for lab 1.
 func (bp *BufferPool) AbortTransaction(tid TransactionID) {
-	// TODO: some code goes here
 }
 
 // Commit the transaction, releasing locks. Because GoDB is FORCE/NO STEAL, none
@@ -48,14 +47,12 @@ func (bp *BufferPool) AbortTransaction(tid TransactionID) {
 // that the system will not crash while doing this, allowing us to avoid using a
 // WAL. You do not need to implement this for lab 1.
 func (bp *BufferPool) CommitTransaction(tid TransactionID) {
-	// TODO: some code goes here
 }
 
 // Begin a new transaction. You do not need to implement this for lab 1.
 //
 // Returns an error if the transaction is already running.
 func (bp *BufferPool) BeginTransaction(tid TransactionID) error {
-	// TODO: some code goes here
 	return nil
 }
 
@@ -71,5 +68,8 @@ func (bp *BufferPool) BeginTransaction(tid TransactionID) error {
 // implement locking or deadlock detection. You will likely want to store a list
 // of pages in the BufferPool in a map keyed by the [DBFile.pageKey].
 func (bp *BufferPool) GetPage(file DBFile, pageNo int, tid TransactionID, perm RWPerm) (Page, error) {
-	return nil, fmt.Errorf("GetPage not implemented")
+	// TODO: some code goes here
+	return nil, fmt.Errorf("GetPage not implemented") // replace me
 }
+
+// Hint: GetPage function need function there: func (bp *BufferPool) evictPage() error

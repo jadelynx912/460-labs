@@ -15,11 +15,14 @@ import (
 // database tables using the method [LoadFromCSV]
 type HeapFile struct {
 	// TODO: some code goes here
+
 	// HeapFile should include the fields below;  you may want to add
 	// additional fields
 	bufPool *BufferPool
 	sync.Mutex
 }
+
+// Hint: heap_page and heap_file need function there:  type heapFileRid struct
 
 // Create a HeapFile.
 // Parameters
@@ -116,7 +119,7 @@ func (f *HeapFile) LoadFromCSV(file *os.File, hasHeader bool, sep string, skipLa
 // using the [heapPage.initFromBuffer] method.
 func (f *HeapFile) readPage(pageNo int) (Page, error) {
 	// TODO: some code goes here
-	return nil, fmt.Errorf("readPage not implemented")
+	return nil, fmt.Errorf("readPage not implemented") // replace me
 }
 
 // Add the tuple to the HeapFile. This method should search through pages in the
@@ -180,8 +183,8 @@ func (f *HeapFile) Descriptor() *TupleDesc {
 // set appropriate so that [deleteTuple] will work (see additional comments there).
 func (f *HeapFile) Iterator(tid TransactionID) (func() (*Tuple, error), error) {
 	// TODO: some code goes here
-	return func() (*Tuple, error) {
-	return nil, fmt.Errorf("heap_file.Iterator not implemented")
+	return func() (*Tuple, error) { //replace me
+		return nil, fmt.Errorf("heap_file.Iterator not implemented")
 	}, nil
 }
 

@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
-
 )
 
 // DBType is the type of a tuple field, in GoDB, e.g., IntType or StringType
@@ -52,6 +51,8 @@ func (d1 *TupleDesc) equals(d2 *TupleDesc) bool {
 	return true
 
 }
+
+// Hint: heap_page need function there:  (desc *TupleDesc) bytesPerTuple() int
 
 // Given a FieldType f and a TupleDesc desc, find the best
 // matching field in desc for f.  A match is defined as
@@ -104,7 +105,7 @@ func (td *TupleDesc) setTableAlias(alias string) {
 // appended onto the fields of desc.
 func (desc *TupleDesc) merge(desc2 *TupleDesc) *TupleDesc {
 	// TODO: some code goes here
-	return &TupleDesc{}  //replace me
+	return &TupleDesc{} //replace me
 }
 
 // ================== Tuple Methods ======================
@@ -186,7 +187,7 @@ func (t1 *Tuple) equals(t2 *Tuple) bool {
 // by merging the descriptions of the two input tuples.
 func joinTuples(t1 *Tuple, t2 *Tuple) *Tuple {
 	// TODO: some code goes here
-	return &Tuple{}
+	return &Tuple{} //replace me
 }
 
 type orderByState int
@@ -224,7 +225,7 @@ func (t *Tuple) compareField(t2 *Tuple, field Expr) (orderByState, error) {
 // entry t2.name in t, but only if there is not an entry t1.name in t)
 func (t *Tuple) project(fields []FieldType) (*Tuple, error) {
 	// TODO: some code goes here
-	return nil, fmt.Errorf("project not implemented")  //replace me
+	return nil, fmt.Errorf("project not implemented") //replace me
 }
 
 // Compute a key for the tuple to be used in a map structure
