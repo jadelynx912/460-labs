@@ -1,8 +1,8 @@
 # Lab 1: GoDB
 
-**Assigned:** Tuesday September 3, 2024
+**Assigned:** Thursday September 12, 2024
 
-**Due:** Wednesday September 19, 2024 by 11:59 PM MT
+**Due:** Tuesday October 1, 2024 by 11:59 PM MT
 
 <!--
 **Bug Update:** We have a [page](bugs.html) to keep track
