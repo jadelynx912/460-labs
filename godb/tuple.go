@@ -46,13 +46,30 @@ type TupleDesc struct {
 // Compare two tuple descs, and return true iff
 // all of their field objects are equal and they
 // are the same length
+// TODO: some code goes here
 func (d1 *TupleDesc) equals(d2 *TupleDesc) bool {
-	// TODO: some code goes here
+	if (len(d1.Fields) != len(d2.Fields)){
+		return false
+	}
+	for i, d1value := range d1.Fields {
+		if (d1value.Fname != d2.Fields[i].Fname){
+			return false
+		}
+		if (d1value.TableQualifier != d2.Fields[i].TableQualifier){
+			return false
+		}
+		if (d1value.Ftype.String() != d2.Fields[i].Ftype.String()){
+			return false
+		}
+	}
 	return true
 
 }
 
-// Hint: heap_page need function there:  (desc *TupleDesc) bytesPerTuple() int
+// Hint: heap_page need function there:  
+func (desc *TupleDesc) bytesPerTuple() int {
+
+}
 
 // Given a FieldType f and a TupleDesc desc, find the best
 // matching field in desc for f.  A match is defined as
@@ -84,6 +101,10 @@ func findFieldInTd(field FieldType, desc *TupleDesc) (int, error) {
 // another slice object does not make a copy of the contents of the slice.
 // Look at the built-in function "copy".
 func (td *TupleDesc) copy() *TupleDesc {
+	output := make([]FieldType, len(td.Fields))
+	numCopied := copy(output, td.Fields)
+	if numCopied != len(td.Fields)
+	
 	// TODO: some code goes here
 	return &TupleDesc{} //replace me
 }
