@@ -208,7 +208,7 @@ func (t *Tuple) writeTo(b *bytes.Buffer) error {
 				return fmt.Errorf("Error writing to buffer in writeTo()")
 			}
 		default:
-			return fmt.Errorf("Something's wrong with the type of tuples in writeTo()")
+			return fmt.Errorf("writeTo() something's wrong with the type of tuples in writeTo()")
 		}
 		// if t.Desc.Fields[i].Ftype == IntType {
 		// 	// Need this for retyping - can't just do t.Fields[0].Value

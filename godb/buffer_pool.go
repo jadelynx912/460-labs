@@ -90,7 +90,6 @@ func (bp *BufferPool) GetPage(file DBFile, pageNo int, tid TransactionID, perm R
 		return nil, fmt.Errorf("Error evicting page, all pages dirty")
 	}
 	// add page to bp
-	key = file.pageKey(pageNo)
 	newPage, err := file.readPage(pageNo)
 	if err != nil {
 		return nil, fmt.Errorf("Error reading page from file")
